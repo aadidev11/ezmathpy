@@ -24,5 +24,5 @@ Ideal for beginners and developers who want quick math helpers without any heavy
 Clone or download the repository:
 
 ```bash
-git clone https://github.com/yourusername/ezmathpy.git
+git clone https://github.com/aadidev11/ezmathpy.git
 cd ezmathpy
