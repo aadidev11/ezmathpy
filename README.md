@@ -1,30 +1,19 @@
-# ezmathpy
+# pyeasycalc
 
-A lightweight Python math utility library providing easy-to-use functions for common mathematical operations, number checks, temperature conversions, and list statistics.  
-
-Ideal for beginners and developers who want quick math helpers without any heavy dependencies.
-
----
+A simple and easy-to-use math utility library for Python.  
+Provides functions for prime checks, palindrome detection, temperature conversions, and common math operations — all with short, clean function names.
 
 ## Features
 
-- Number checks: prime, even, odd  
-- Palindrome detection for strings and integers  
-- Temperature conversions: Celsius, Fahrenheit, Kelvin  
-- List operations: sum, average, min, max, median, range  
-- Basic math: factorial, square, cube, square root, power, absolute value  
-- Number theory: greatest common divisor (GCD), least common multiple (LCM)  
-- Percentage calculations  
-- Angle conversions: degrees ↔ radians  
-
----
+- Check if a number is prime, even, or odd  
+- Detect string and integer palindromes  
+- Convert temperatures between Fahrenheit, Celsius, and Kelvin  
+- Compute sum, average, factorial, min, max, median, range of lists  
+- Common math utilities: square, cube, square root, power, gcd, lcm, percentage, degree-radian conversions  
 
 ## Installation
 
-Clone or download the repository:
+Install via pip:
 
 ```bash
-git clone https://github.com/aadidev11/ezmathpy.git
-cd ezmathpy
-cd ezmathpy
-then put the file ezmathpy.py in whatever project you need i am uploading on pypi soon but in meanwhile you have to use this
+pip install pyeasycalc
