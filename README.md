@@ -26,3 +26,5 @@ Clone or download the repository:
 ```bash
 git clone https://github.com/aadidev11/ezmathpy.git
 cd ezmathpy
+cd ezmathpy
+then put the file ezmathpy.py in whatever project you need i am uploading on pypi soon but in meanwhile you have to use this
