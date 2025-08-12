@@ -1,1 +1,1 @@
-from .ezmathpy import *  # or import specific functions here
+from .pyeasycalc import *  # or import specific functions here
