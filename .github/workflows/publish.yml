@@ -1,9 +1,8 @@
 name: Publish pyeasycalc to PyPI
 
 on:
-  push:
-    tags:
-      - 'v*'  # Run workflow only when a tag starting with 'v' is pushed (e.g., v0.2.0)
+  release:
+    types: [published]  # Trigger when a release is published
 
 jobs:
   build-and-publish:
