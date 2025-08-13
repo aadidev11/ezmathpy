@@ -1,6 +1,6 @@
 setup(
     name='pyeasycalc',  # matches folder name and PyPI package name
-    version='0.2.2',
+    version='0.2.3',
     author='aadidev11',
     description='A simple and easy-to-use math utility library for Python',
     packages=['pyeasycalc'],
