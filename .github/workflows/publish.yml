@@ -5,30 +5,30 @@ on:
     types: [published]
 
 jobs:
-  build-and-publish:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # Check out your repository
       - name: Check out repository
         uses: actions/checkout@v4
 
+      # Set up Python (optional but recommended for build/check steps)
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.x"
 
-      - name: Install dependencies
-        run: python -m pip install --upgrade pip build twine
+      # (Optional) Install dependencies and build package before upload
+      - name: Install build tools
+        run: python -m pip install --upgrade pip build
 
       - name: Build package
         run: python -m build
 
-      - name: Check build files
-        run: python -m twine check dist/*
-
-      - name: Publish to PyPI
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-        run: python -m twine upload dist/*
+      # Deploy to PyPI using casperdcl/deploy-pypi
+      - name: PyPI Deployment
+        uses: casperdcl/deploy-pypi@v2.5.0
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
 
