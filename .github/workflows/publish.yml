@@ -7,20 +7,18 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: "3.x"
 
       - name: PyPI Deployment
         uses: casperdcl/deploy-pypi@v2.5.0
         with:
+          user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
-          build: true   # tells the action to run python -m build automatically
-
+          build: true          # <-- REQUIRED for building
+          dist_dir: dist       # matches where build outputs go
 
