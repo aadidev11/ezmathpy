@@ -1,3 +1,4 @@
+from setuptools import setup, find_packages
 setup(
     name='pyeasycalc',  # matches folder name and PyPI package name
     version='0.2.4',
